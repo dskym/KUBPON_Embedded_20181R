@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <script src="js/register.js"></script>
+	
+	<title>KUBPON!!</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+        <a class="navbar-brand" href="index.html">KUBPON</a>
+		
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+		
+        <div class="navbar-collapse collapse" id="navbarsExampleDefault" style="">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="user.html">User</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="market.html">Market</a>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+    <main role="main" class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="card m-2" style="width: 30rem;">
+                <div class="card-header">
+                    <h3><strong>User LogIn</strong></h3>
+                </div>
+                <form class="card-body" action='user.html' method='get'>
+                    <div class="form-group">
+                        <!-- <label class="col-12 control-label" for="user_id"><b>ID</b></label> -->
+                        <div class="col-12">
+                            <input class="form-control input" type="text" placeholder="User ID" name="user_id" required>
+                        </div>
+                    </div>
+                    <div class="col-12 text-right">
+                        <input class="btn btn-success" type='submit' id='login_user' value='User LogIn!'/>
+                    </div>
+                </form>
+            </div>
+            <div class="card m-2" style="width: 30rem;">
+                <div class="card-header">
+                    <h3><strong>Market LogIn</strong></h3>
+                </div>
+                <form class="card-body" action='market.html' method='get'>
+                    <div class="form-group">
+                        <!-- <label class="col-12 control-label" for="shop_id"><b>Shop ID</b></label> -->
+                        <div class="col-12">
+                            <input class="form-control input" type="text" placeholder="Market ID" name="market_id" required>
+                        </div>
+                    </div>
+                    <div class="col-12 text-right">
+                        <input class="btn btn-success" type='submit' id='login_market' value='Market LogIn!'/>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row align-items-center justify-content-center">
+            <div class="card m-2" style="width: 30rem;">
+                <div class="card-header">
+                    <h3><strong>User Register</strong></h3>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <!-- <label class="col-12 control-label" for="user_id"><b>ID</b></label> -->
+                        <div class="col-12">
+                            <input class="form-control input" type="text" placeholder="User ID" id="user_id_register" required>
+                        </div>
+                    </div>
+                    <div class="col-12 text-right">
+                        <input class="btn btn-info" type='button' id="user_register_button" value='User Register!'/>
+                    </div>
+                </div>
+            </div>
+            <div class="card m-2" style="width: 30rem;">
+                <div class="card-header">
+                    <h3><strong>Market Register</strong></h3>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <!-- <label class="col-12 control-label" for="shop_id"><b>Shop ID</b></label> -->
+                        <div class="col-12">
+                            <input class="form-control input" type="text" placeholder="Market ID" id="market_id_register" required>
+                        </div>
+                    </div>
+                    <div class="col-12 text-right">
+                        <input class="btn btn-info" type='button' id="market_register_button" value='Market Register!'/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <br>
+        <div class="row align-items-center justify-content-center">
+          <div class="jumbotron" style="width: 80rem;">
+            <h1>Navbar examples</h1>
+            <p>This example is a quick exercise to illustrate how the navbar and its contents work. Some navbars extend the width of the viewport, others are confined within a <code>.container</code>. For positioning of navbars, checkout the <a href="../navbar-top/">top</a> and <a href="../navbar-top-fixed/">fixed top</a> examples.</p>
+            <p>At the smallest breakpoint, the collapse plugin is used to hide the links and show a menu button to toggle the collapsed content.</p>
+            <p>
+            <a class="btn btn-primary" href="../../components/navbar/" role="button">View navbar docs »</a>
+            </p>
+          </div>
+        </div> -->
+    </main>
+</body>
+</html>
